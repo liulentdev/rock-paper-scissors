@@ -21,3 +21,5 @@ function getHumanChoice()
     else 
         return "Scissors"
 }
+
+let humanScore = 0;
