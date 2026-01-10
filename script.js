@@ -21,6 +21,11 @@ function getHumanChoice()
         return "paper";
     else if(answer == "scissors")
         return "scissors";
+    else
+    {
+        console.log("Invalid choice");
+        return null;
+    }
 }
 
 let humanScore = 0;
