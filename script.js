@@ -18,7 +18,7 @@ function getHumanChoice()
         return "Rock"
     else if(answer == "Paper")
         return "Paper"
-    else 
+    else if(answer == "Scissors")
         return "Scissors"
 }
 
