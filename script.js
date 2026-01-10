@@ -14,12 +14,13 @@ function getComputerChoice()
 function getHumanChoice()
 {
     let answer = prompt("Rock, Paper or Scissors?");
-    if(answer == "Rock")
-        return "Rock"
-    else if(answer == "Paper")
-        return "Paper"
-    else if(answer == "Scissors")
-        return "Scissors"
+    answer = answer.toLowerCase();
+    if(answer == "rock")
+        return "rock";
+    else if(answer == "paper")
+        return "paper";
+    else if(answer == "scissors")
+        return "scissors";
 }
 
 let humanScore = 0;
@@ -27,8 +28,6 @@ let computerScore = 0;
 
 function playRound(humanChoice, computerChoice)
 {
-    humanChoice = humanChoice.toLowerCase();
-    computerChoice = computerChoice.toLowerCase();
     
     if(humanChoice == "paper" && computerChoice == "rock")
     {   
