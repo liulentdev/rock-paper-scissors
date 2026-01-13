@@ -69,10 +69,6 @@ function playRound(humanChoice, computerChoice)
 
 }
 
-
-
-//playRound(humanSelection, computerSelection);
-
 function playGame()
 {
     for(let i = 0; i < 5; i++)
@@ -85,5 +81,5 @@ function playGame()
     if(humanScore >= 3)
         console.log("Congratulations, you win!");
     else
-        console.log("You lose, better luck next time");
+        console.log("You lose, better luck next time!");
 }
