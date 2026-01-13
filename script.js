@@ -14,7 +14,7 @@ function getComputerChoice()
 function getHumanChoice()
 {
     let answer = prompt("Rock, Paper or Scissors?");
-    answer = answer.toLowerCase();
+    answer = answer.toLowerCase(); //stagod unese korisnik pretvoti u lowercase da bi radio lakse poredjenje kasnije
     if(answer == "rock")
         return "rock";
     else if(answer == "paper")
@@ -69,7 +69,21 @@ function playRound(humanChoice, computerChoice)
 
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+
+//playRound(humanSelection, computerSelection);
+
+function playGame()
+{
+    for(let i = 0; i < 5; i++)
+    {
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
+    }
+
+    if(humanScore >= 3)
+        console.log("Congratulations, you win!");
+    else
+        console.log("You lose, better luck next time");
+}
