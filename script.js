@@ -65,7 +65,12 @@ function playRound(humanChoice, computerChoice)
         humanScore++;
     }
     else if(humanChoice == computerChoice)
+    {
         console.log("It's a tie!");
+        humanScore++;
+        computerScore++;
+    }
+        
 
 }
 
